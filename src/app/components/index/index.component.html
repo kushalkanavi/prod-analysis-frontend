@@ -1,0 +1,79 @@
+<div class="container">
+  <h1 style="text-align: center; font-size: 80px">FACTORY ANALYSIS</h1>
+  <br>
+  <br>
+  <img (click)="fireEvent($event)" src="assets/images/Original_2.png" style="text-align: center">
+
+  <br>
+  <br>
+
+  <table class="table" [hidden]="!(block1 || block2 || block3 || block4)">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody [hidden]="!block1">
+    <tr>
+      <th scope="row">1</th>
+      <td>Block 1</td>
+      <td>Block 1</td>
+      <td>Block 1</td>
+    </tr>
+    </tbody>
+
+    <tbody [hidden]="!block2">
+    <tr>
+      <th scope="row">1</th>
+      <td>Block 2</td>
+      <td>Block 2</td>
+      <td>Block 2</td>
+    </tr>
+    </tbody>
+
+    <tbody [hidden]="!block3">
+    <tr>
+      <th scope="row">1</th>
+      <td>Block 3</td>
+      <td>Block 3</td>
+      <td>Block 3</td>
+    </tr>
+    </tbody>
+
+    <tbody [hidden]="!block4">
+    <tr>
+      <th scope="row">1</th>
+      <td>Block 4</td>
+      <td>Block 4</td>
+      <td>Block 4</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <canvas id="pieChart"></canvas>
+    </div>
+    <div class="col-lg-6">
+      <canvas id="radarChart"></canvas>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <canvas id="barChart"></canvas>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <canvas id="barchart-realistic-sales"></canvas>
+    </div>
+  </div>
+
+  <!--<canvas id="lineChart"></canvas>-->
+
+</div>
